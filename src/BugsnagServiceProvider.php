@@ -303,24 +303,6 @@ class BugsnagServiceProvider extends ServiceProvider
                 }
             });
         }
-
-        if (!isset($config['user']) || $config['user']) {
-            $client->registerCallback(new CustomUser(function () use ($app) {
-                if ($user = $app->auth->user()) {
-                    if (method_exists($user, 'attributesToArray') && is_callable([$user, 'attributesToArray'])) {
-                        return $user->attributesToArray();
-                    }
-
-                    if ($user instanceof GenericUser) {
-                        $reflection = new ReflectionClass($user);
-                        $property = $reflection->getProperty('attributes');
-                        $property->setAccessible(true);
-
-                        return $property->getValue($user);
-                    }
-                }
-            }));
-        }
     }
 
     /**
