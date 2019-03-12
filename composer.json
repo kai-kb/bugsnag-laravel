@@ -1,8 +1,8 @@
 {
-    "name": "bugsnag/bugsnag-laravel",
-    "description": "Official Bugsnag notifier for Laravel applications.",
+    "name": "kai-kb/bugsnag-laravel",
+    "description": "Fork of the official Bugsnag notifier for Laravel applications.",
     "keywords": ["bugsnag", "exceptions", "errors", "logging", "tracking", "laravel"],
-    "homepage": "https://github.com/bugsnag/bugsnag-laravel",
+    "homepage": "https://github.com/kai-kb/bugsnag-laravel",
     "license": "MIT",
     "authors": [
         {
@@ -30,7 +30,7 @@
     },
     "autoload-dev": {
         "psr-4" : {
-            "Bugsnag\\BugsnagLaravel\\Tests\\" : "tests/"
+            "kai-kb\\BugsnagLaravel\\Tests\\" : "tests/"
         },
         "files": [
             "tests/bc.php"
