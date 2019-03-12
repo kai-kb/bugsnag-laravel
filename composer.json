@@ -30,7 +30,7 @@
     },
     "autoload-dev": {
         "psr-4" : {
-            "kai-kb\\BugsnagLaravel\\Tests\\" : "tests/"
+            "Bugsnag\\BugsnagLaravel\\Tests\\" : "tests/"
         },
         "files": [
             "tests/bc.php"
